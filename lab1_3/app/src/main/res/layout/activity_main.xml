@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    >
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SIGN IN"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/margin_basex3"
+        android:id="@+id/sign_in"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/sign_in"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="@string/username"
+        android:layout_marginTop="@dimen/margin_basex4"
+        android:layout_marginLeft="@dimen/margin_basex3"
+        android:id="@+id/username"
+
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_basex2"
+        app:layout_constraintLeft_toRightOf="@id/username"
+        app:layout_constraintTop_toBottomOf="@id/sign_in"
+        android:layout_marginLeft="100dp"
+        android:hint="name@gmail.com"
+        android:id="@+id/ed_username"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/password"
+        android:id="@+id/password"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/username"
+        android:layout_marginLeft="@dimen/margin_basex3"
+        android:layout_marginTop="35dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_basex2"
+        app:layout_constraintLeft_toRightOf="@id/password"
+        app:layout_constraintTop_toBottomOf="@id/ed_username"
+        android:layout_marginLeft="100dp"
+        android:hint="**********"
+        android:id="@+id/ed_password"
+
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/signup"
+        app:layout_constraintTop_toBottomOf="@id/ed_password"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="10dp"
+        android:id="@+id/signup"
+        />
+
+    <Button
+        android:text="SIGN IN VIA FACEBOOK"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="50dp"
+        android:id="@+id/bt_SIGNIN"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SIGN IN"
+        app:layout_constraintTop_toBottomOf="@id/bt_SIGNIN"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
